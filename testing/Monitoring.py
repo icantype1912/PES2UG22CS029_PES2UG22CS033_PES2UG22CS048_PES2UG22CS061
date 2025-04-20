@@ -13,7 +13,7 @@ print("👀 Watching for pod events...\n")
 try:
     for event in w.stream(v1.list_namespaced_pod, namespace="default"):
         pod = event['object']
-        event_type = event['type']  # ADDED, MODIFIED, DELETED
+        event_type = event['type'] 
         name = pod.metadata.name
         status = pod.status.phase
 
@@ -26,7 +26,6 @@ try:
         else:
             color = Fore.WHITE
 
-        if event_type != "MODIFIED":
-            print(f"{color}{event_type}: {name} - Status: {status}{Style.RESET_ALL}")
+        print(f"{color}{event_type}: {name} - Status: {status}{Style.RESET_ALL}")
 except KeyboardInterrupt:
     print(Fore.CYAN + "\n🛑 Stopped watching.")

@@ -3,7 +3,7 @@ from random_word import RandomWords
 import threading
 import time
 
-URL = "http://192.168.49.2:32719/shorten"
+URL = "http://192.168.49.2:30966/shorten"
 thread_count = 50
 interval = 0.1
 rand = RandomWords()
