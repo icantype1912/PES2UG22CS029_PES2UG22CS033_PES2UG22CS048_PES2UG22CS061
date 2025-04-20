@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -28,11 +31,74 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  background-color: #282828;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #43b6fd, #f24cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-web {
+  display: flex;
+  height: 47vh;
+  background-color: #282828;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.main-web-left{
+  height: 47vh;
+  background-color: #282828;
+  border-style: solid;
+  border-color: azure;
+  border-width: 1px;
+  flex:1;
+  border-right-width: 0.5px;
+}
+
+.main-web-right{
+  height: 47vh;
+  background-color: #282828;
+  border-style: solid;
+  border-color: azure;
+  border-width: 1px;
+  flex:1;
+  border-left-width: 0.5px;
+}
+
+.test {
+  display: flex;
+  height: 47vh;
+  background-color: #282828;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.test-left{
+  height: 47vh;
+  background-color: #282828;
+  border-style: solid;
+  border-color: azure;
+  border-width: 1px;
+  flex:1;
+  border-right-width: 0.5px;
+}
+
+.test-right{
+  height: 47vh;
+  background-color: #282828;
+  border-style: solid;
+  border-color: azure;
+  border-width: 1px;
+  flex:1;
+  border-left-width: 0.5px;
 }
